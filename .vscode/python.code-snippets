@@ -1,0 +1,78 @@
+{
+	// Place your atcoder workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Input list from console": {
+	"scope": "python",
+	"prefix": "input_list",
+	"body": [
+		"map(int, input().split())",
+	],
+	"description": "input list from conole"
+	},
+
+	"Import numpy": {
+		"scope": "python",
+		"prefix": "np_import",
+		"body": [
+			"import numpy as np",
+		],
+		"description": "Import numpy"
+		},
+		
+	"change min": {
+	"scope": "python",
+	"prefix": "chmin",
+	"body": [
+		"def ch_min(dp, i, b):",
+        "    if dp[i] > b:",
+        "        dp[i] = b",
+        "        return True",
+        "    else:",
+        "        return False"
+	],
+	"description": "change min"
+	},
+		
+	"change max": {
+	"scope": "python",
+	"prefix": "chmax",
+	"body": [
+		"def ch_max(dp, i, b):",
+        "    if dp[i] < b:",
+        "        dp[i] = b",
+        "        return True",
+        "    else:",
+        "        return False"
+	],
+	"description": "change max"
+	},
+	
+	"Measure time": {
+		"scope": "python",
+		"prefix": "measure_time",
+		"body": [
+			"r = 10**4",
+			"start_time = time.time()",
+			"for _ in range(r):",
+			"    $1",
+			"end_time = time.time()",
+			"print(end_time - start_time)"
+		],
+		"description": "Measure time"
+	}
+}
